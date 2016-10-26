@@ -39,16 +39,15 @@ function agregarLista(e){
 		listaUl.appendChild(lista);
 
 		spanTrash.onclick = function (){
-		listaUl.removeChild(lista);
-		};
+			listaUl.removeChild(lista);
+		}
+			
 		check.onclick = function(){
-			listaUl.classList.toggle("delineado");
+			lista.classList.toggle("delineado");
 		};
 
-	document.getElementById("textoArea").value = "";
-
-	}
-
+		document.getElementById("textoArea").value = "";
+	};
 };
 
 
